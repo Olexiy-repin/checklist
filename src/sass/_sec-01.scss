@@ -194,6 +194,7 @@
     margin-right: 1.1rem;
     outline: none;
     cursor: pointer;
+    opacity: 0;
   }
 
   .form-input:checked + label::before{
@@ -539,3 +540,32 @@
         .questionnaire__form-input:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 0.3s ease;}
         .questionnaire__form-input:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 0.3s ease;}
         .questionnaire__form-input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-indent 0.3s ease;}
+// // // // // // // // // // // // // // // // // // // // // // // // // //
+  // Succes
+    // HEADER
+      #success {
+        background-image: url("img/success-bg.png"), url("img/bg-lines.png");
+        background-position: top;
+        background-repeat: no-repeat, repeat-y;
+        background-size: cover, auto;
+        min-height: 100vh;
+        .header {
+          align-items: center;
+          margin-bottom: 20.1rem;
+          }
+          .main-content__btn {
+            letter-spacing: 2px;
+          }
+        }
+
+      // CONTENT
+        #success .main-content__title {
+          font-size: pxToRem(48px);
+          margin-bottom: 1.5rem;
+        }
+
+        #success .main-content__paragraph {
+          font-family: GilroyL;
+          width: 47%;
+          margin-bottom: 3.1rem;
+        }
